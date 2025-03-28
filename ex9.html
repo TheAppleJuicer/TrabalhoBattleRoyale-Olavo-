@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="hora">
+    </div>
+</body>
+<script>
+    function atualizarHora() {
+    const hoje = new Date();
+    const dia = String(hoje.getDate()).padStart(2, '0');
+    const mes = String(hoje.getMonth() + 1).padStart(2, '0'); 
+    const ano = hoje.getFullYear();
+    const hora = hoje.getHours();
+    const minutos = hoje.getMinutes();
+    const segundos = hoje.getSeconds(); 
+    const formattedDate = `${dia}/${mes}/${ano} - ${hora}:${minutos}:${segundos}`;
+    document.getElementById('hora').textContent = (`${dia}/${mes}/${ano} - ${hora}:${minutos}:${segundos}`);
+    }
+    setInterval(atualizarHora, 1000);
+    
+</script>
+
+</html>

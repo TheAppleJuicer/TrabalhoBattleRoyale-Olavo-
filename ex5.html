@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #texto {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="mostrar()">clique no botão</button>
+    <div id="texto"> <img src="https://i.pinimg.com/736x/e8/24/40/e824407bf5b8110429762ad625b461e3.jpg" alt="" id="gato"></div>
+    <style>
+        #gato{
+            width: 500px;
+        }
+    </style>
+    <script>
+        function mostrar() {
+            var texto = document.getElementById("texto");
+            var botao = document.querySelector("button");
+
+            if (texto.style.display === "none") {
+                texto.style.display = "block";
+                botao.textContent = "AHAHAAHAHAAHAHAHAAHHAAHAH";
+            } else {
+                texto.style.display = "none";
+                botao.textContent = "AHAHAHAAHAHAHAAHAHAHAHAAHAHAA ";
+            }
+        }
+    </script>
+</body>
+
+</html>

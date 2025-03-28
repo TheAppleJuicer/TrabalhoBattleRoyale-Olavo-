@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+    <h1>clique no cachorro-quente</h1>
+    <button id="botaoClique" > <img src="/image-removebg-preview (3).png" alt="" id="cachorro-quente"/></button>
+    <p>Você clicou no cachorro-quente <span id="contador">0</span> vezes.</p>
+    <div id="xingamento"></div>
+    </section>
+    <script>
+        let contador = 0;
+        const botao = document.getElementById("botaoClique");
+        const elementoContador = document.getElementById("contador");
+
+        botao.addEventListener("click", () => {
+            contador++;
+            elementoContador.textContent = contador;
+            if (contador >= 50) {
+            document.getElementById("xingamento").textContent = ("O cachorro quente surgiu nos Estados Unidos no final do século 19")
+        }
+         if (contador >= 100) {
+            document.getElementById("xingamento").textContent = ("A ideia de servir a salsicha dentro do pão foi uma solução para que os clientes pudessem comer o lanche sem queimar as mãos")
+        }
+         if (contador >= 150) {
+            document.getElementById("xingamento").textContent = ("A primeira menção ao cachorro quente nos Estados Unidos é atribuída a Charles Feltman, um imigrante alemão")
+        }
+        if (contador >= 200) {
+            document.getElementById("xingamento").textContent = ("Certa vez, em uma competição, Joey Chestnut comeu 74 hot dogs em 10 minutos.")
+        }
+        if (contador >= 250) {
+            document.getElementById("xingamento").textContent = ("O cachorro-quente é um alimento profundamente enraizado na cultura americana, especialmente durante o verão, quando milhões de cachorros-quentes são consumidos em churrascos, jogos de beisebol e festas. Estima-se que os americanos consumam cerca de 20 bilhões de cachorros-quentes por ano.")
+        }
+        });
+
+        
+        
+        
+    </script>
+</body>
+</html>

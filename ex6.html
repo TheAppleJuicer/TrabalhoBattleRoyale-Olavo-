@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            height: auto;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img id="imagem" src="https://i.pinimg.com/736x/08/e9/67/08e9675bf5a37782d17d395f762c7ef1.jpg" alt="Imagem Original" onmouseover="trocarImg()" onmouseout="voltarImg()">
+
+    <script>
+        function trocarImg() {
+            document.getElementById("imagem").src = "https://i.pinimg.com/736x/e8/24/40/e824407bf5b8110429762ad625b461e3.jpg";
+        }
+        
+        function voltarImg() {
+            document.getElementById("imagem").src = "https://i.pinimg.com/736x/08/e9/67/08e9675bf5a37782d17d395f762c7ef1.jpg";
+        }
+    </script>
+</body>
+</html>

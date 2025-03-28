@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="container">
+        <h1>Login</h1>
+        <div>
+            <p>nome</p>
+            <input type="text" id="user" placeholder="joaoadalberto@gmail.com" required>
+
+        </div>
+        <div>
+            <p>senha</p>
+            <input type="password" id="senha" placeholder="senha123" required>
+
+        </div>
+        <section>
+
+            <button type="submit" onclick="Log()"> Log In </button>
+
+            <div class="result" id="resultado">
+            </div>
+            <script>
+                function Log(){
+                
+                    const senha = document.getElementById("senha").value;
+                    const user = document.getElementById("user").value;
+                    
+                    if (user != "" && senha != "") {
+                       document.getElementById("resultado").textContent = "formulario completo"; 
+                    }
+                    else if (isNaN("user") || isNaN("senha")) {
+                        document.getElementById("resultado").textContent = "Preencha todos os campos";
+                    }
+                    
+                }   
+            </script>
+        </section>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Estilo</title>
+    <style>
+        #meuTexto {
+            font-size: 16px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="meuTexto">Isto é um texto (alterável)</p>
+    <button onclick="alterarEstilo()">botão</button>
+
+    <script>
+        let decorado = false;
+
+        function alterarEstilo() {
+            const texto = document.getElementById("meuTexto");
+
+            if (!decorado) {
+                texto.style.color = "red";
+                texto.style.fontFamily = "Monocraft";
+                texto.style.fontSize = "20px";
+                texto.style.fontWeight = "bold";
+                texto.textContent = "Isto é um texto (alterado)";
+            } else {
+                texto.style.color = "black";
+                texto.style.fontFamily = "Arial, sans-serif";
+                texto.style.fontSize = "16px";
+                texto.style.fontWeight = "normal";
+                texto.textContent = "Isto é um texto (desalterado)";
+            }
+
+            decorado = !decorado; 
+        }
+    </script>
+</body>
+
+</html>

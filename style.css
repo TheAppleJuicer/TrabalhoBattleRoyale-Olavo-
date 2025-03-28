@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+*{
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+body{
+    background-color: red;
+}
+section{
+    position: relative;
+    left: 450px;
+    justify-content: center;
+    align-items: center;
+}
+h1{ 
+    left: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: "Pixelify Sans", sans-serif; 
+    color: rgb(119, 0, 0)  ;
+}
+
+button{
+    background-image: url(/image-removebg-preview\ \(3\)) no-repeat;
+    background-color: transparent;
+    position: relative;
+    left: -130px;
+    width: 500px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#contador{
+    color: rgb(255, 187, 0);
+    font-size: larger;
+}
+p{
+    font-family: "Pixelify Sans", sans-serif; 
+    color: rgb(255, 208, 0)  ;
+}
+#cachorro-quente{
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+}
+
+#xingamento{
+    background-image: url(https://pngimg.com/uploads/speech_balloon/speech_balloon_PNG114.png) no-repeat;
+    font-family: "Pixelify Sans", sans-serif;
+    position: relative;
+    left: -90px;
+    color: rgb(255, 196, 0)  ;
+    display: block  ;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+    inline-size: 500px;
+}

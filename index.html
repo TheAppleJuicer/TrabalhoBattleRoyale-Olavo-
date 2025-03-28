@@ -1,0 +1,73 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <p id="paragrafo">isto é um parágrafo</p>
+        <button type="reset" onclick="paragrafo()">isto é um botão</button>
+    </section>
+    <script>
+        let textoOriginal = "isto é um parágrafo"
+        let textoAlternativo = "isto é um parágrafo diferente"
+        let textoAtualOriginal = true;
+
+        function paragrafo() {
+            const paragrafo = document.getElementById("paragrafo");
+            if (textoAtualOriginal) {
+                paragrafo.textContent = textoAlternativo;
+            }
+            else{
+                paragrafo.textContent = textoOriginal;
+            }
+            textoAtualOriginal = !textoAtualOriginal
+        }
+    </script>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remover Item da Lista</title>
+</head>
+
+<body>
+    <ul id="minhaLista">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+    </ul>
+    <button onclick="removerUltimoItem()">Remover último item</button>
+    <button onclick="adicionarItem()">Adicionar Item</button>
+
+    <script>
+        function adicionarItem() {
+            var lista = document.getElementById("minhaLista");
+            var novoItem = document.createElement("li");
+            novoItem.textContent = "Novo Item";
+            novoItem.classList.add("item");
+            lista.appendChild(novoItem);
+        }
+
+        function removerUltimoItem() {
+            var lista = document.getElementById("minhaLista");
+            if (lista.lastChild) {  
+                lista.removeChild(lista.lastChild);
+            } else {
+                alert("Não há mais itens para remover.");
+            }
+        }
+    </script>
+</body>
+
+</html>
+
